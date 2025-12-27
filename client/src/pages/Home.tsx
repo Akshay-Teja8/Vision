@@ -372,7 +372,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center text-center">
             <img 
-              src="/logo.jpg" 
+              src="logo.jpg" 
               alt="Interiors Vision Logo" 
               className="h-16 w-16 object-contain mb-6 hover:scale-105 transition-transform"
             />
