@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Neutral, Elegant Palette */
+  /* Background: Soft Off-White/Cream */
+  --background: 40 20% 98%;
+  
+  /* Foreground: Deep Charcoal/Warm Black */
+  --foreground: 30 10% 15%;
+
+  /* Primary: Warm Wood/Bronze Tone */
+  --primary: 32 40% 45%;
+  --primary-foreground: 40 20% 98%;
+
+  /* Secondary: Soft Beige/Taupe */
+  --secondary: 40 15% 92%;
+  --secondary-foreground: 30 10% 15%;
+
+  /* Muted: Light Grey */
+  --muted: 40 10% 94%;
+  --muted-foreground: 30 5% 45%;
+
+  /* Accent: Muted Gold/Earth */
+  --accent: 35 60% 70%;
+  --accent-foreground: 30 10% 15%;
+
+  /* Destructive */
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+
+  /* Border */
+  --border: 40 10% 88%;
+  
+  /* Inputs */
+  --input: 40 10% 88%;
+  
+  /* Ring */
+  --ring: 32 40% 45%;
+
+  --radius: 0.25rem;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    @apply font-semibold tracking-tight;
+  }
+}
+
+/* Custom scrollbar for webkit */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.3);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary));
+}
